@@ -1,4 +1,3 @@
-#include "_putchar.h"
 /**
  * main - prints str using only _putchar
  * @void: Description of parameter x
