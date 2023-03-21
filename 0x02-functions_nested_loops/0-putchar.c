@@ -1,5 +1,4 @@
 #include "_putchar.c"
-#include "main.h"
 /**
  * main - prints str using only _putchar
  * @void: Description of parameter x
