@@ -1,17 +1,19 @@
 #include "main.h"
 /**
- * print_alphabet - printf alphabet lowercase10times
+ * print_alphabet_x10 - printf alphabet lowercase10times
  *
  *return: char
  */
 void print_alphabet_x10(void)
 {
 	char alph;
-	
-	int i =0;
+
+	int i;
+
+	i = 0;
 	while (i < 10)
 	{
-		alph='a';
+		alph = 'a';
 		while (alph >= 'a' && alph <= 'z')
 		{
 			_putchar(alph);
