@@ -32,6 +32,26 @@ void _printbuzz(void)
 	putchar('z');
 }
 /**
+ * _printfizzbuzz - fizz buzz
+ * @void: Description of parameter x
+(* a blank line
+ * Description: Longer description of the function)?
+(* section header: Section description)*
+ * Return: fizzbuzz
+ */
+void _printfizzbuzz(void)
+{
+	putchar('F');
+	putchar('i');
+	putchar('z');
+	putchar('z');
+	putchar('B');
+	putchar('u');
+	putchar('z');
+	putchar('z');
+	putchar(32);
+}
+/**
  * _FizzBuzz - 0-100 fizz buzz
  * @void: Description of parameter x
 (* a blank line
@@ -48,18 +68,7 @@ void _FizzBuzz(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			putchar('F');
-			putchar('i');
-			putchar('z');
-			putchar('z');
-			putchar('B');
-			putchar('u');
-			putchar('z');
-			putchar('z');
-			if (i != 100)
-			{
-				putchar(32);
-			}
+			_printfizzbuzz();
 		}
 		else if (i % 3 == 0)
 		{
