@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _printFizz - prints fizz
  * @void: Description of parameter x
@@ -9,11 +10,11 @@
  */
 void _printFizz(void)
 {
-	_putchar('F');
-	_putchar('i');
-	_putchar('z');
-	_putchar('z');
-	_putchar(32);
+	putchar('F');
+	putchar('i');
+	putchar('z');
+	putchar('z');
+	putchar(32);
 }
 /**
  * _printbuzz - prints buzz
@@ -25,11 +26,11 @@ void _printFizz(void)
  */
 void _printbuzz(void)
 {
-	_putchar('B');
-	_putchar('u');
-	_putchar('z');
-	_putchar('z');
-	_putchar(32);
+	putchar('B');
+	putchar('u');
+	putchar('z');
+	putchar('z');
+	putchar(32);
 }
 /**
  * _FizzBuzz - 0-100 fizz buzz
@@ -56,29 +57,29 @@ void _FizzBuzz(void)
 		}
 		else if (i % 5 == 0 && i % 3 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
-			_putchar(32);
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
+			putchar(32);
 		}
 		else
 		{
 			if (i >= 10)
 			{
-				_putchar(i / 10 + '0');
-				_putchar(32);
+				putchar(i / 10 + '0');
+				putchar(32);
 			}
-			_putchar(i % 10 + '0');
-			_putchar(32);
+			putchar(i % 10 + '0');
+			putchar(32);
 		}
 		i++;
 	}
-	_putchar(10);
+	putchar(10);
 }
 /**
  * main - run the prog
