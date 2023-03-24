@@ -1,2 +1,5 @@
 int _putchar(char c);
-void print_line(int n);
+void _printFizz(void);
+void _printbuzz(void);
+void _FizzBuzz(void);
+int main(void);
