@@ -47,15 +47,7 @@ void _FizzBuzz(void)
 	i = 1;
 	while (i <= 100)
 	{
-		if (i % 3 == 0)
-		{
-			_printFizz();
-		}
-		else if (i % 5 == 0)
-		{
-			_printbuzz();
-		}
-		else if (i % 5 == 0 && i % 3 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			putchar('F');
 			putchar('i');
@@ -66,6 +58,14 @@ void _FizzBuzz(void)
 			putchar('z');
 			putchar('z');
 			putchar(32);
+		}
+		else if (i % 3 == 0)
+		{
+			_printFizz();
+		}
+		else if (i % 5 == 0)
+		{
+			_printbuzz();
 		}
 		else
 		{
