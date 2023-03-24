@@ -11,27 +11,21 @@ void more_numbers(void)
 {
 	int i;
 	int j;
-	int k;
 
 	i = 0;
-	k = 0;
-	while (k < 10)
+	while (i < 10)
 	{
-		while (i <= 14)
+		j = 0;
+		while (j <= 14)
 		{
-			j = 0;
-			while (j <= 14)
+			if (j >= 10)
 			{
-				if (j >= 10)
-				{
-					_putchar(j / 10 + '0');
-				}
-				_putchar(j % 10 + '0');
-				j++;
+				_putchar(j / 10 + '0');
 			}
-			_putchar(10);
-			i++;
+			_putchar(j % 10 + '0');
+			j++;
 		}
-		k++;
+		_putchar(10);
+		i++;
 	}
 }
