@@ -30,7 +30,6 @@ void _printbuzz(void)
 	putchar('u');
 	putchar('z');
 	putchar('z');
-	putchar(32);
 }
 /**
  * _FizzBuzz - 0-100 fizz buzz
@@ -57,7 +56,10 @@ void _FizzBuzz(void)
 			putchar('u');
 			putchar('z');
 			putchar('z');
-			putchar(32);
+			if (i != 100)
+			{
+				putchar(32);
+			}
 		}
 		else if (i % 3 == 0)
 		{
@@ -66,6 +68,10 @@ void _FizzBuzz(void)
 		else if (i % 5 == 0)
 		{
 			_printbuzz();
+			if (i != 100)
+			{
+				putchar(32);
+			}
 		}
 		else
 		{
