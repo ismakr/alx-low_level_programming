@@ -72,7 +72,6 @@ void _FizzBuzz(void)
 			if (i >= 10)
 			{
 				putchar(i / 10 + '0');
-				putchar(32);
 			}
 			putchar(i % 10 + '0');
 			putchar(32);
