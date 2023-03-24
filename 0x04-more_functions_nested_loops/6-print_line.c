@@ -14,15 +14,15 @@ void print_line(int n)
 	i = 0;
 	if (n <= 0)
 	{
-		putchar(10);
+		_putchar(10);
 	}
 	else
 	{
 		while (i < n)
 		{
-			putchar('_');
+			_putchar('_');
 			i++;
 		}
-		putchar(10);
+		_putchar(10);
 	}
 }
