@@ -33,7 +33,7 @@ void rev_string(char *s)
 	int j;
 
 	j = 0;
-	i = strlen(s) - 1;
+	i = _strlen(s) - 1;
 	while (i >= 0 && s[i] != '\0' && j <= i)
 	{
 		swp = *(s + i);
