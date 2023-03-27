@@ -29,12 +29,11 @@ int _strlen(char *s)
 void print_rev(char *s)
 {
 	int i;
-	char swp;
 
 	i = _strlen(s) - 1;
 	while (i >= 0 && *s != '\0')
 	{
-		_putchar(*(s + i))
+		_putchar(*(s + i));
 			i--;
 	}
 }
