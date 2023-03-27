@@ -31,10 +31,10 @@ void print_rev(char *s)
 	int i;
 	char swp;
 
-	i = strlen(s) - 1;
+	i = _strlen(s) - 1;
 	while (i >= 0 && s != '\0')
 	{
-		putchar(*(s + i))
+		_putchar(*(s + i))
 			i--;
 	}
 }
