@@ -28,19 +28,18 @@ int _strlen(char *s)
  */
 void rev_string(char *s)
 {
+	char swp;
 	int i;
+	int j;
 
-	while (*s != '\0')
+	j = 0;
+	i = strlen(s) - 1;
+	while (i >= 0 && s[i] != '\0' && j <= i)
 	{
-		_putchar(*s);
-		s++;
-	}
-	_putchar(10);
-	i = _strlen(s) - 1;
-	while (i >= 0 && *s != '\0')
-	{
-		_putchar(*(s + i));
+		swp = *(s + i);
+		*(s + i) = *(s + j);
+		*(s + j) = swp;
 		i--;
+		j++;
 	}
-	_putchar(10);
 }
