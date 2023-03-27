@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _puts - ret the length of str
  * @str: Description of parameter x
