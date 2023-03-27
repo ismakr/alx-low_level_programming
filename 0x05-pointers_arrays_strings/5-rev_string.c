@@ -30,10 +30,10 @@ void rev_string(char *s)
 {
 	int i;
 
-	while (*str != '\0')
+	while (*s != '\0')
 	{
-		_putchar(*str);
-		str++;
+		_putchar(*s);
+		s++;
 	}
 	_putchar(10);
 	i = _strlen(s) - 1;
