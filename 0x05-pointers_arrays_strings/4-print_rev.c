@@ -32,7 +32,7 @@ void print_rev(char *s)
 	char swp;
 
 	i = _strlen(s) - 1;
-	while (i >= 0 && s != '\0')
+	while (i >= 0 && *s != '\0')
 	{
 		_putchar(*(s + i))
 			i--;
