@@ -1,4 +1,3 @@
-include "main.h"
 /**
  * reset_to_98 - deref val to 98
  * @n: pointer to int
