@@ -15,7 +15,7 @@ int neg(char *s)
 	i = 0;
 	while (*(s + i) < 48 || *(s + i) > 57)
 	{
-		if (*(s + i) == '+')
+		if (*(s + i) == '-')
 		{
 			nn = nn + 1;
 		}
