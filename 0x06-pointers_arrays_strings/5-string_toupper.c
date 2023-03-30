@@ -1,9 +1,8 @@
 /**
  * string_toupper - cap str
- * @: pqr
+ * @str: pqr
  * Return:  0
  */
-char *string_toupper(char *);
 char *string_toupper(char *str)
 {
 	int i;
