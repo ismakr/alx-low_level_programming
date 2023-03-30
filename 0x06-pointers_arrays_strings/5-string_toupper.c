@@ -6,6 +6,7 @@
 (* section header: Section description)*
  * Return:  0
  */
+char *string_toupper(char *);
 char *string_toupper(char *str)
 {
 	int i;
@@ -19,4 +20,5 @@ char *string_toupper(char *str)
 		}
 		i++;
 	}
+	return (str);
 }
