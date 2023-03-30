@@ -1,9 +1,6 @@
 /**
- * string_toupper - cat str
- * @str: parametre
-(* a blank line
- * Description: Longer description of the function)?
-(* section header: Section description)*
+ * string_toupper - cap str
+ * @: pqr
  * Return:  0
  */
 char *string_toupper(char *);
