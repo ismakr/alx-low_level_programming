@@ -11,7 +11,6 @@ char *cap_string(char *s)
 	int i;
 
 	i = 0;
-	string_toupper(s);
 	while (*(s + i) != '\0')
 	{
 		if (*(s + i) == ';' || *(s + i) == ',' || *(s + i) == '.'
