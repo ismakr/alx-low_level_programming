@@ -25,6 +25,10 @@ char *_strpbrk(char *s, char *accept)
 		{
 			j++;
 		}
+		if (*(s + i) == '\0')
+		{
+			return (0);
+		}
 		if (*(s + i) == *(accept + j))
 		{
 			return (s + i);
