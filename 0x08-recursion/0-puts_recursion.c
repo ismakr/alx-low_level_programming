@@ -16,4 +16,8 @@ void _puts_recursion(char *s)
 	{
 		_putchar(10);
 	}
+	if (*s == '\0')
+	{
+		_putchar(10);
+	}
 }
