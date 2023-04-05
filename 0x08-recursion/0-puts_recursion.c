@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _puts_recursion - put str with recursion
  * @s: pointer to ft ch
