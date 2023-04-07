@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * main - prog prints its name
  * @argc: the number of arguments on the command line
