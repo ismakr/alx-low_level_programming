@@ -29,5 +29,7 @@ void ft_putnb(int n)
  */
 int main(int argc, char *argv[])
 {
+	(void)argv;
 	ft_putnb(argc);
+	return (0);
 }
