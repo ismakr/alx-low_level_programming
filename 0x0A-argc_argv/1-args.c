@@ -6,11 +6,6 @@
  */
 void ft_putnb(int n)
 {
-	if (n < 0)
-	{
-		n = -n;
-		_putchar('-');
-	}
 	if (n < 10)
 	{
 		_putchar(n + 48);
