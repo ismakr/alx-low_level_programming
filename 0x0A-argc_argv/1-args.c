@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * ft_putnb - prints nub
  * @n: int
