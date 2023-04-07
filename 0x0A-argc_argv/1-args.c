@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "main.h"
 /**
  * ft_putnb - prints nub
  * @n: int
