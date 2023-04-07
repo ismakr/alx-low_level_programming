@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * ft_putnb - prints nub
  * @n: int
@@ -31,5 +32,6 @@ int main(int argc, char *argv[])
 {
 	(void)argv;
 	ft_putnb(argc);
+	_putchar(10);
 	return (0);
 }
