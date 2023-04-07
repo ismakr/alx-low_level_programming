@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
 			_putchar(*(*(argv + i) + j));
 			j++;
 		}
+		_putchar(10);
 		i++;
 	}
+	return (0);
 }
