@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
 		if (*(*(argv + i) + j) < 48 || *(*(argv + i) + j) > 57)
 		{
 			_puts();
-			return (0);
+			return (1);
 		}
 		mu += _atoi(*(argv + i));
 		i++;
