@@ -103,12 +103,15 @@ int main(int argc, char *argv[])
 	{
 		_puts();
 	}
-	while (i < argc)
+	else
 	{
-		mu *= _atoi(*(argv + i));
-		i++;
+		while (i < argc)
+		{
+			mu *= _atoi(*(argv + i));
+			i++;
+		}
+		printf("%d", mu);
+		printf("\n");
 	}
-	printf("%d", mu);
-	printf("\n");
 	return (0);
 }
