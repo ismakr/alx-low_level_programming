@@ -2,25 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _puts - ret the length of str
-(* a blank line
- * Description: Longer description of the function)?
-(* section header: Section description)*
- * Return: void
- */
-void _puts(void)
-{
-	char *str;
-
-	str = "Error";
-	while (*str != '\0')
-	{
-		putchar(*str);
-		str++;
-	}
-	putchar(10);
-}
-/**
  * main - prog prints its name
  * @argc: the number of arguments on the command line
  * @argv: an array of C-style strings
@@ -32,16 +13,26 @@ int main(int argc, char *argv[])
 	int mu;
 	int j;
 
-	j = 0;
 	mu = 0;
 	i = 1;
 	while (i < argc)
 	{
-		if (*(*(argv + i) + j) < 48 || *(*(argv + i) + j) > 57)
+		j = 0;
+		while (*(*(argv + i) + j) != '\0')
 		{
-			_puts();
-			return (1);
+			if (*(*(argv + i) + j) < 48 || *(*(argv + i) + j) > 57)
+			{
+				printf("Error");
+				printf("\n");
+				return (1);
+			}
+			j++;
 		}
+		i++;
+	}
+	i = 1;
+	while (i < argc)
+	{
 		mu += atoi(*(argv + i));
 		i++;
 	}
