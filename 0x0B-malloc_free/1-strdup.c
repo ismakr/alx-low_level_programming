@@ -1,5 +1,24 @@
 #include <stdlib.h>
 /**
+ * _strlen - ret the length of str
+ * @s: Description of parameter x
+(* a blank line
+ * Description: Longer description of the function)?
+(* section header: Section description)*
+ * Return: int i
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+/**
  * _strdup - returns a pointer to a newly allocated space in memory.
  * @str: string to be copied
  * Return: pointer
@@ -16,7 +35,7 @@ char *_strdup(char *str)
 	}
 	i = 0;
 	j = 0;
-	p = (char *)malloc(1);
+	p = (char *)malloc(_strlen(str) + 1);
 	while (*(str + i) != '\0')
 	{
 		if (p == NULL)
@@ -27,6 +46,5 @@ char *_strdup(char *str)
 		i++;
 		j++;
 	}
-	*(p + j) = '\0';
 	return (p);
 }
