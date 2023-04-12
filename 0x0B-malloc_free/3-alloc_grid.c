@@ -11,10 +11,10 @@ int **alloc_grid(int width, int height)
 	int **p;
 
 	i = 0;
-	p = (int **)malloc(height * 8);
+	p = (int **)malloc(height * sizeof(int *));
 	while (i < width)
 	{
-		*(p + i) = (int *)malloc(width * 8);
+		*(p + i) = (int *)malloc(width * sizeof(int));
 		i++;
 	}
 	return (p);
