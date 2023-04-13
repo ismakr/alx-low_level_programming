@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * _strlen - ret the length of str
  * @s: Description of parameter x
