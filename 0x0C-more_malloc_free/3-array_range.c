@@ -14,7 +14,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	p = calloc(max, sizeof(int));
+	p = malloc(max * sizeof(int));
 	if (p == NULL)
 	{
 		return (NULL);
