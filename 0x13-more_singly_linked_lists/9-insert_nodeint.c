@@ -22,7 +22,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	p = *head;
 	while (p != NULL)
 	{
-		if ((idx - 1 == i) || (i == 0 && idx == 0))
+		if (i == 0 && idx == 0)
+		{
+			tmp = p->next;
+			node = p;
+			*head = node;
+			node->next = tmp;
+		}
+		else if (idx - 1 == i)
 		{
 			tmp = p->next;
 			p->next = node;
