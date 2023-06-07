@@ -9,9 +9,10 @@ int _sqrt_2arg(int check, int nbr)
 {
 	if (nbr * nbr == check)
 		return (nbr);
-	if (nbr <= 0)
+	else if (check > nbr)
+		return (_sqrt_2arg(check, ++nbr));
+	else
 		return (-1);
-	return (_sqrt_2arg(check, nbr - 1));
 }
 /**
  * _sqrt_recursion - returns the natural sqrt of a number using 1 args
@@ -20,5 +21,8 @@ int _sqrt_2arg(int check, int nbr)
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt_2arg(n, n));
+	int i;
+
+	i = 1;
+	return (_sqrt_2arg(n, i));
 }
