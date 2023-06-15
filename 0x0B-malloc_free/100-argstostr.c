@@ -57,7 +57,7 @@ char *argstostr(int ac, char **av)
 	i = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	p = malloc(sizeof(char) * (ac + sum + 1));
+	p = malloc((sizeof(char) * sum) + ac + 1);
 	if (p == NULL)
 	{
 		free(p);
