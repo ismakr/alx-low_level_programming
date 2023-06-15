@@ -20,24 +20,18 @@ int _strlen(char *s)
 }
 /**
  * chcount - retu the sum of all ch passed as arg
- * @ac: nbr arg
  * @av: arg
  * Return: int sum
  */
-int chcount(int ac, char *av[])
+int chcount(char *av[])
 {
-	int i, sum, j;
+	int i, sum;
 
 	i = 0;
 	sum = 0;
-	while (i < ac)
+	while (av[i])
 	{
-		j = 0;
-		while (av[i][j] != '\0')
-		{
-			sum += _strlen(av[i]);
-			j++;
-		}
+		sum += _strlen(av[i]);
 		i++;
 	}
 	return (sum);
@@ -53,7 +47,7 @@ char *argstostr(int ac, char **av)
 	int i, j, sum, k;
 	char *p;
 
-	sum = chcount(ac, av);
+	sum = chcount(av);
 	i = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
