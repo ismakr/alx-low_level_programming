@@ -47,10 +47,10 @@ char *argstostr(int ac, char **av)
 	int i, j, sum, k;
 	char *p;
 
-	sum = chcount(av);
 	i = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
+	sum = chcount(av);
 	p = malloc((sizeof(char) * sum) + ac + 1);
 	if (p == NULL)
 	{
