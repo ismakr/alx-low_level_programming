@@ -29,7 +29,7 @@ unsigned int _strlen(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j;
+	unsigned int i, j, k;
 	char *p;
 
 	i = 0;
@@ -51,11 +51,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		j++;
 	}
 	j = 0;
-	while (*(s2 + j) != '\0' || i < n)
+	k = 0;
+	while (*(s2 + j) != '\0' && k < n)
 	{
 		*(p + i) = *(s2 + j);
 		i++;
 		j++;
+		k++;
 	}
 	*(p + i) = '\0';
 	return (p);
