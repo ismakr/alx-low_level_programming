@@ -40,7 +40,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	namecopy = malloc((sizeof(char) * _strlen(name)) + 1);
+	if (namecopy == NULL)
+		free(namecopy);
 	ownercopy = malloc((sizeof(char) * _strlen(owner)) + 1);
+	if (ownercopy == NULL)
+		free(ownercopy);
 	i = 0;
 	j = 0;
 	while (*(name + i) != '\0')
