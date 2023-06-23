@@ -17,7 +17,10 @@ void print_char(char c)
 void print_str(char *str)
 {
 	if (str == NULL)
+	{
 		printf("(nil)");
+		return;
+	}
 	printf("%s", str);
 }
 /**
