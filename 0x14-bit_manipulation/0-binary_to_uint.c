@@ -67,7 +67,7 @@ char *_strcpy(char *dest, const char *src)
 	return (dest);
 }
 /**
- * int binary_to_uint - converts a binary number to an unsigned int.
+ * binary_to_uint - converts a binary number to an unsigned int.
  * @b: ptr to the binary nbr (string)
  * Return:  the converted number, or 0 if there is one or more
  * chars in the string b that is not 0 or 1.
@@ -80,6 +80,8 @@ unsigned int binary_to_uint(const char *b)
 	char *s;
 	char *str;
 
+	if (b == NULL)
+		return (0);
 	n_dig = _strlen(b);
 	s = malloc(sizeof(char) * n_dig + 1);
 	str = _strcpy(s, b);
@@ -97,7 +99,7 @@ unsigned int binary_to_uint(const char *b)
 	sum = 0;
 	while (i < n_dig)
 	{
-		if ((!(s[i] >= '0' && s[i] <= '1')) || (s == NULL))
+		if (!(s[i] >= '0' && s[i] <= '1'))
 			return (0);
 		sum += arr[i] * (s[i] - '0');
 		i++;
