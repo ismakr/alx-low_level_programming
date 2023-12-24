@@ -11,3 +11,4 @@ char *_strcpy(char *dest, char *src);
 int pos(char *s);
 int neg(char *s);
 int _atoi(char *s);
+void print_array(int *a, int n);
