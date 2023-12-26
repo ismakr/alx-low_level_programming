@@ -28,7 +28,6 @@ int _strlen(char *s)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	char *s;
 	list_t *node;
 	list_t *ptr;
 
@@ -39,8 +38,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(node);
 		return (NULL);
 	}
-	s = strdup(str);
-	node->str = s;
+	node->str = strdup(s);
 	node->len = _strlen(s);
 	node->next = NULL;
 	if (ptr != NULL)
