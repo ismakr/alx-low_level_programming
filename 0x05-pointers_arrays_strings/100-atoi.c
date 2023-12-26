@@ -27,8 +27,7 @@ int _atoi(char *s)
 		nb = 10 * nb + (*(s + i) - '0');
 		i++;
 	}
-	if (pos_count >= neg_count)
-		return (nb);
-	else
-		return (nb * -1);
+	if (pos_count < neg_count)
+		nb *= -1;
+	return (nb);
 }
