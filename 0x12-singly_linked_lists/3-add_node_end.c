@@ -9,7 +9,7 @@
 (* section header: Section description)*
  * Return: int i
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int i;
 
@@ -38,8 +38,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(node);
 		return (NULL);
 	}
-	node->str = strdup(s);
-	node->len = _strlen(s);
+	node->str = strdup(str);
+	node->len = _strlen(str);
 	node->next = NULL;
 	if (ptr != NULL)
 	{
