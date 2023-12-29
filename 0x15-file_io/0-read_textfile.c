@@ -33,7 +33,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	while (i < bytes_read)
 	{
-		write_che = write(1, &text[i], 1);
+		write_che = write(ptr, &text[i], 1);
 		if (write_che == -1)
 			return (0);
 		i++;
