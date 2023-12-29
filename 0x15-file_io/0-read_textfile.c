@@ -31,13 +31,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bytes_read = read(ptr, text, letters);
 	if (bytes_read == -1)
 		return (0);
-	while (i < bytes_read)
-	{
-		write_che = write(ptr, &text[i], 1);
-		if (write_che == -1)
-			return (0);
-		i++;
-	}
+	write_che = write(ptr, &text, bytes_read);
+	if (write_che == -1)
+		return (0);
 	close(ptr);
 	return (bytes_read);
 }
