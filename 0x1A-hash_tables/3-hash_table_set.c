@@ -12,6 +12,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node;
 	hash_node_t *update;
 
+	if (!ht || !key || !value)
+		return (0);
 	/* get the idx using djb2 algo */
 	idx = key_index((unsigned char *)key, ht->size);
 	/* update the key at idx if it is already exists */
