@@ -6,8 +6,6 @@ OBJ= $(SRC:.c=.o)
 
 NAME= school
 
-all: school
-
-school: $(OBJ)
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	@chmod +x $(NAME)
