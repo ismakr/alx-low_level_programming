@@ -13,10 +13,10 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	@chmod +x $(NAME)
 
-clean: $(OBJ) $(RM)
+clean:
 	$(RM) *~ $(NAME)
 
-oclean: $(OBJ) $(RM)
+oclean:
 	$(RM) $(OBJ)
 
 fclean: oclean fclean
