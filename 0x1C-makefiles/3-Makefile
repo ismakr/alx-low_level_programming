@@ -8,7 +8,6 @@ NAME= school
 
 RM= rm -f
 
-
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	@chmod +x $(NAME)
@@ -19,6 +18,6 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 
-fclean: oclean fclean
+fclean: clean oclean
 
 re: fclean all
