@@ -8,8 +8,6 @@ NAME= school
 
 all: school
 
-school: main.c school.c
-	$(CC)    -c -o main.o main.c
-	$(CC)    -c -o school.o school.c
+school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	@chmod +x $(NAME)
