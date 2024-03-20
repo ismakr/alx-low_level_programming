@@ -6,17 +6,20 @@ OBJ= $(SRC:.c=.o)
 
 NAME= school
 
+RM= rm -f
+
+
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	@chmod +x $(NAME)
 
-clean: $(OBJ)
-	rm -f *~ $(NAME)
+clean: $(OBJ) $(RM)
+	$(RM) *~ $(NAME)
 
-oclean: $(OBJ)
-	rm $(OBJ)
+oclean: $(OBJ) $(RM)
+	$(RM) $(OBJ)
 
-fclean: $(OBJ)
-	rm -f $(OBJ) *~ $(NAME)
+fclean: $(OBJ) $(RM)
+	$(RM) $(OBJ) *~ $(NAME)
 
 re: fclean all
