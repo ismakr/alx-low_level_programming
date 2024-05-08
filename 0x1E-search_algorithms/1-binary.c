@@ -41,7 +41,7 @@ void ft_putarr(int *array, int l, int r)
 	{
 		ft_putnbr(array[l]);
 		if (l != r - 1)
-			write(1, ", ", 1);
+			write(1, ", ", 2);
 		l++;
 	}
 	write(1, "\n", 1);
@@ -71,13 +71,13 @@ int binary_search(int *array, size_t size, int value)
 			l = m + 1;
 		else if (value < array[m])
 			r = m - 1;
+		else
+			return (array[m]);
 		if (l != m && r != m)
 		{
 			write(1, "Searching in array: ", 20);
 			ft_putarr(array, l, r + 1);
 		}
-		if (array[m] == value)
-			return (value);
 	}
 	return (-1);
 }
