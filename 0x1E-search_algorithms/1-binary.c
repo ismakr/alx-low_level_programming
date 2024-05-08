@@ -72,7 +72,7 @@ int binary_search(int *array, size_t size, int value)
 		else if (value < array[m])
 			r = m - 1;
 		else
-			return (array[m]);
+			return (m);
 		if (l != m && r != m)
 		{
 			write(1, "Searching in array: ", 20);
