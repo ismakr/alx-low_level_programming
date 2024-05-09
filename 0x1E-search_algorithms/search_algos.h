@@ -6,4 +6,5 @@ void ft_putnbr(int nb);
 void ft_printf(char *format, size_t a, int b);
 int binary_search(int *array, size_t size, int value);
 void _printf(char *format, ...);
+int jump_search(int *array, size_t size, int value);
 #endif
