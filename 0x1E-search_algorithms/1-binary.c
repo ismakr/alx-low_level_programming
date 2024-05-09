@@ -62,8 +62,11 @@ int binary_search(int *array, size_t size, int value)
 	(void)value;
 	r = size - 1;
 	l = 0;
-	write(1, "Searching in array: ", 20);
-	ft_putarr(array, l, r + 1);
+	if (array != NULL && size != 0)
+	{
+		write(1, "Searching in array: ", 20);
+		ft_putarr(array, l, r + 1);
+	}
 	while (l <= r)
 	{
 		m = (r + l) / 2;
