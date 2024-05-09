@@ -1,7 +1,6 @@
 #include "search_algos.h"
 #include <unistd.h>
 #include <math.h>
-#include <stdio.h>
 #include <limits.h>
 #include <stdarg.h>
 /**
@@ -76,6 +75,8 @@ int jump_search(int *array, size_t size, int value)
 	l = 0;
 	h = 0;
 	step = sqrt(size);
+	if (array == NULL && size == 0)
+		return (-1);
 	while (h <= size - 1)
 	{
 		if (h < size - 1)
