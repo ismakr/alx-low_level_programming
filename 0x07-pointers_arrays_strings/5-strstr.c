@@ -1,3 +1,4 @@
+#include <stddef.h>
 /**
  * _strlen - ret the length of str
  * @s: Description of parameter x
@@ -25,23 +26,25 @@ int _strlen(char *s)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
-	int j;
-	int k;
+	char *substr, *firststr, *retstr;
 
-	i = 0;
-	j = 0;
-	k = _strlen(needle) - 1;
-	while (*needle != '\0')
+	firststr = haystack;
+	if (!*haystack)
+		return ("NULL");
+	while (*firststr != '\0')
 	{
-		while (*(needle + j) == *(haystack + i))
+		substr = needle;
+		retstr = firststr;
+		while (*substr == *firststr && *substr != '\0')
 		{
-			j++;
-			i++;
+			firststr++;
+			substr++;
 		}
-		if (*(needle + j) == '\0')
-			return (haystack + k);
-		j = 0;
+		if (*substr == '\0')
+			return (retstr);
+		else if (*firststr == '\0')
+			return ("NULL");
+		firststr++;
 	}
-	return (0);
+	return (NULL);
 }
